@@ -153,12 +153,12 @@ Open the URL shown in the terminal (typically `http://localhost:8501`) in your b
 
 The Streamlit dashboard includes:
 
-• Project Overview
-• Dataset Information
-• Model Details
-• Disease Prediction
-• Confidence Scores
-• Top-5 Predictions
+• Project Overview  
+• Dataset Information  
+• Model Details  
+• Disease Prediction  
+• Confidence Scores  
+• Top-5 Predictions  
 
 
 ## 8. Deactivate the Virtual Environment
