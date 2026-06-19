@@ -11,6 +11,9 @@ A deep learning-based plant leaf disease detection system built using **TensorFl
 * Early Stopping to prevent overfitting
 * Learning Rate Scheduling
 * Model Checkpointing
+* Streamlit Web Application
+* Top-5 Prediction Visualization
+* Confidence Score Display
 * Supports classification of **38 plant disease classes**
 
 
@@ -34,6 +37,7 @@ The dataset contains images of healthy and diseased plant leaves belonging to mu
 * Matplotlib
 * Google Colab
 * Kaggle API
+* Streamlit
   
 
 ## 📁 Project Structure
@@ -41,6 +45,7 @@ The dataset contains images of healthy and diseased plant leaves belonging to mu
 ```text
 Leaf-Disease-Detection/
 │
+├── app.py
 ├── leaf_disease_detection.ipynb
 ├── requirements.txt
 └── README.md
@@ -145,6 +150,15 @@ streamlit run app.py
 ```
 
 Open the URL shown in the terminal (typically `http://localhost:8501`) in your browser.
+
+The Streamlit dashboard includes:
+
+• Project Overview
+• Dataset Information
+• Model Details
+• Disease Prediction
+• Confidence Scores
+• Top-5 Predictions
 
 
 ## 8. Deactivate the Virtual Environment
@@ -283,17 +297,20 @@ final_leaf_disease_model.keras
 
 ## 🔮 Future Improvements
 
-* Deploy as a web application 
-* Mobile deployment using TensorFlow Lite
 * Disease severity estimation
 * Treatment and pesticide recommendation system
+* Grad-CAM visualization
+* Mobile deployment using TensorFlow Lite
 * Real-time detection from camera feed
+* Multi-language support
+* Downloadable prediction reports
 
 
 ## 📊 Results
 
 The model leverages transfer learning from ResNet50 and fine-tuning to achieve high classification accuracy on the PlantVillage dataset.
 
+The accompanying Streamlit application allows users to upload leaf images and receive real-time disease predictions along with confidence scores and top-5 probable classifications.
 
 ## 🤝 Contributing
 
