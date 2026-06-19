@@ -2,7 +2,7 @@
 
 A deep learning-based plant leaf disease detection system built using **TensorFlow**, **Keras**, and **ResNet50 Transfer Learning**. The model is trained on the PlantVillage dataset and can classify leaf images into **38 different disease and healthy plant categories**.
 
-![HomePage](HomePage.png)
+![HomePage]
 
 
 ## 📌 Features
@@ -310,9 +310,14 @@ final_leaf_disease_model.keras
 
 ## 📊 Results
 
-The model leverages transfer learning from ResNet50 and fine-tuning to achieve high classification accuracy on the PlantVillage dataset.
+The fine-tuned ResNet50 model achieved:
 
-The accompanying Streamlit application allows users to upload leaf images and receive real-time disease predictions along with confidence scores and top-5 probable classifications.
+- Training Accuracy: 98.84%
+- Best Validation Accuracy: 98.75%
+- Validation Loss: 0.0372
+
+The model demonstrates strong generalization performance on the PlantVillage dataset while maintaining low validation loss.
+
 
 ## 🤝 Contributing
 
