@@ -2,6 +2,8 @@
 
 A deep learning-based plant leaf disease detection system built using **TensorFlow**, **Keras**, and **ResNet50 Transfer Learning**. The model is trained on the PlantVillage dataset and can classify leaf images into **38 different disease and healthy plant categories**.
 
+![HomePage](HomePage.png)
+
 
 ## 📌 Features
 
