@@ -47,24 +47,48 @@ Leaf-Disease-Detection/
 ```
   
 
-## 🚀 Installation
 
-### 1. Clone the Repository
+# 🚀 Installation
+
+## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Vevan05/Plant-Leaf-Disease-Detection.git
-cd Plant-Leaf-Disease-Detection
+git clone https://github.com/your-username/Leaf-Disease-Detection.git
+cd Leaf-Disease-Detection
 ```
 
-### 2. Install Dependencies
+## 2. Create a Virtual Environment
+
+### Windows
 
 ```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+You should now see `(venv)` at the beginning of your terminal prompt.
+
+
+## 3. Install Dependencies
+
+```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 3. Configure Kaggle API
 
-Download your `kaggle.json` file from Kaggle and place it in the project directory.
+## 4. Configure Kaggle API (For Training)
+
+Download your `kaggle.json` API key from your Kaggle account and place it in the project root directory.
+
+### Linux / macOS
 
 ```bash
 mkdir -p ~/.kaggle
@@ -72,12 +96,73 @@ cp kaggle.json ~/.kaggle/
 chmod 600 ~/.kaggle/kaggle.json
 ```
 
-### 4. Download Dataset
+### Windows
+
+Create the folder:
+
+```text
+C:\Users\<YourUsername>\.kaggle
+```
+
+and place `kaggle.json` inside it.
+
+
+## 5. Download the Dataset
 
 ```bash
 kaggle datasets download -d mohitsingh1804/plantvillage
 unzip plantvillage.zip
 ```
+
+After extraction, ensure the dataset structure is:
+
+```text
+PlantVillage/
+├── train/
+└── val/
+```
+
+
+## 6. Train the Model
+
+Run the training notebook or Python script to train and save the model:
+
+```bash
+python train.py
+```
+
+The trained model will be saved as:
+
+```text
+final_leaf_disease_model.keras
+```
+
+
+## 7. Run the Streamlit Application
+
+```bash
+streamlit run app.py
+```
+
+Open the URL shown in the terminal (typically `http://localhost:8501`) in your browser.
+
+
+## 8. Deactivate the Virtual Environment
+
+When you're done:
+
+```bash
+deactivate
+```
+
+
+If your repository already contains the trained model (`final_leaf_disease_model.keras`), you can skip **Steps 4–6** and directly run:
+
+```bash
+streamlit run app.py
+```
+
+after installing the dependencies.
 
 
 ## 🧠 Model Architecture
