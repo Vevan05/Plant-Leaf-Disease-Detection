@@ -132,11 +132,7 @@ PlantVillage/
 
 ## 6. Train the Model
 
-Run the training notebook or Python script to train and save the model:
-
-```bash
-python train.py
-```
+Run the notebook `PlantLeafDiseaseDetection.ipynb` to train and save the model.
 
 The trained model will be saved as:
 
